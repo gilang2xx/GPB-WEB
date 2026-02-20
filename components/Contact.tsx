@@ -61,7 +61,7 @@ export const Contact: React.FC = () => {
                {/* Map Styling Overlay for Dark Mode Effect (CSS Filter) */}
                <div className="absolute inset-0 pointer-events-none z-10 mix-blend-overlay bg-gpb-blue/10"></div>
                <iframe 
-                 src="https://www.google.com/maps/place/GOR+Tirta+Sari/@-6.4028498,106.8464373,17z/data=!3m1!4b1!4m16!1m9!4m8!1m0!1m6!1m2!1s0x2e69eb97a875b9cd:0x1aaa72d41fc79504!2sGOR+Tirta+Sari,+Jl.+Bahagia+Raya+No.8,+Abadijaya,+Kec.+Sukmajaya,+Kota+Depok,+Jawa+Barat+16417!2m2!1d106.8490395!2d-6.4027712!3m5!1s0x2e69eb97a875b9cd:0x1aaa72d41fc79504!8m2!3d-6.4028551!4d106.8490176!16s%2Fg%2F1pv2c_dnz?entry=ttu&g_ep=EgoyMDI2MDIxOC4wIKXMDSoASAFQAw%3D%3D" 
+                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.931324730123!2d106.84643731241688!3d-6.4028497625991045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69eb97a875b9cd%3A0x1aaa72d41fc79504!2sGOR%20Tirta%20Sari!5e0!3m2!1sid!2sid!4v1771614407563!5m2!1sid!2sid" 
                  width="100%" 
                  height="100%" 
                  style={{border:0, filter: 'grayscale(100%) invert(90%) contrast(1.2)'}} 
