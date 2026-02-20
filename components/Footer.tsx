@@ -11,7 +11,7 @@ export const Footer: React.FC = () => {
             <img 
                 src="/images/logo-color.png" 
                 alt="Global Private Badminton" 
-                className="h-20 w-auto object-contain mb-6 dark:invert"
+                className="h-20 w-auto object-contain mb-6 dark:brightness-100 dark:invert-0 transition-all duration-300"
             />
             <div className="max-w-xs">
                <h3 className="font-teko text-3xl uppercase leading-none mb-2 text-black dark:text-white">
