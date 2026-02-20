@@ -66,13 +66,14 @@ export const Navbar: React.FC<NavbarProps> = ({ currentView, setView }) => {
             className="flex-shrink-0 cursor-pointer"
             onClick={() => setView(View.HOME)}
           >
-            <img 
-                src="/images/logo-color.png" 
-                alt="Global Private Badminton" 
-                // Always invert in light mode (since bg is blue and logo text is black) AND dark mode (bg black).
-                // Using brightness-0 invert makes it pure white.
-                className="h-12 md:h-14 w-auto object-contain"
-            />
+            <img
+  src="/images/logo-color.png"
+  alt="Global Private Badminton"
+  // PERHATIKAN PERUBAHAN DI SINI:
+  // 1. 'brightness-0 invert': Membuat logo jadi putih di mode terang (default).
+  // 2. 'dark:brightness-100 dark:invert-0': Mengembalikan kecerahan dan warna normal saat mode gelap.
+  className="h-12 md:h-14 w-auto object-contain brightness-0 invert dark:brightness-100 dark:invert-0 transition-all duration-300"
+/>
           </div>
 
           {/* Desktop Menu */}
