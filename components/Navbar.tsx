@@ -71,7 +71,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentView, setView }) => {
                 alt="Global Private Badminton" 
                 // Always invert in light mode (since bg is blue and logo text is black) AND dark mode (bg black).
                 // Using brightness-0 invert makes it pure white.
-                className="h-12 md:h-14 w-auto object-contain filter brightness-0 invert hover:opacity-80 transition-opacity duration-300"
+                className="h-12 md:h-14 w-auto object-contain"
             />
           </div>
 
