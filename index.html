@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GPB | Global Private Badminton</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Teko (Headings) & Satoshi (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+      // Initialize Theme: DEFAULT TO LIGHT MODE
+      // We only check localStorage. If it's explicitly 'dark', we use dark.
+      // Otherwise (first visit or 'light'), we force light mode.
+      if (localStorage.theme === 'dark') {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+
+      tailwind.config = {
+        darkMode: 'class', // Enabled manual toggle
+        theme: {
+          extend: {
+            colors: {
+              gpb: {
+                black: '#000000',
+                white: '#FFFFFF',
+                blue: '#0052CC',
+                orange: '#FF6600',
+                grey: '#F2F2F2'
+              }
+            },
+            fontFamily: {
+              teko: ['Teko', 'sans-serif'],
+              satoshi: ['Satoshi', 'sans-serif']
+            },
+            letterSpacing: {
+              tighter: '-0.05em',
+              tightest: '-0.08em'
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        overflow-x: hidden;
+      }
+      
+      /* Light Mode Zebra */
+      .bg-zebra {
+        background: repeating-linear-gradient(
+          -45deg,
+          #f3f4f6,
+          #f3f4f6 20px,
+          #ffffff 20px,
+          #ffffff 40px
+        );
+      }
+      
+      /* Dark Mode Zebra */
+      .dark .bg-zebra {
+        background: repeating-linear-gradient(
+          -45deg,
+          #000000,
+          #000000 20px,
+          #111111 20px,
+          #111111 40px
+        );
+      }
+
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #1a1a1a; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #333; 
+        border: 2px solid #000;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+      }
+      
+      /* Sharp Utilities */
+      .sharp-shadow {
+        box-shadow: 10px 10px 0px 0px rgba(255, 102, 0, 1);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.41.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-white text-black dark:bg-black dark:text-white transition-colors duration-300">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
