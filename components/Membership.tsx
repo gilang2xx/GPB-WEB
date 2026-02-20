@@ -88,13 +88,14 @@ export const Membership: React.FC = () => {
         {/* Video Grid (Reels Style) */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
           {socialVideos.map((video) => (
-            <a 
-              key={video.id} 
-              href="https://instagram.com" 
-              target="_blank" 
-              rel="noreferrer"
-              className="group relative aspect-[9/16] overflow-hidden bg-gray-900 cursor-pointer block border border-transparent hover:border-gpb-blue transition-colors duration-300"
-            >
+            <a
+  key={video.id}
+  // Ganti jadi pakai kurung kurawal seperti ini:
+  href={video.link} 
+  target="_blank"
+  rel="noreferrer"
+  className="group relative aspect-[9/16] overflow-hidden bg-gray-900 cursor-pointer"
+>
               {/* Thumbnail */}
               <img 
                 src={video.image} 
