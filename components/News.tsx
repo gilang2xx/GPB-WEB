@@ -55,7 +55,7 @@ export const News: React.FC = () => {
            </div>
            
            {/* Functional Link: Blue */}
-           <button className="hidden md:block text-gpb-blue font-teko text-3xl uppercase underline decoration-2 underline-offset-4 hover:text-black dark:hover:text-white transition-colors">
+           <button className="hidden md:block text-gpb-blue font-teko text-3xl normal-case underline decoration-2 underline-offset-4 hover:text-black dark:hover:text-white transition-colors">
              Follow Our Journey
            </button>
         </div>

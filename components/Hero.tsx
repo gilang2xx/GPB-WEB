@@ -19,7 +19,7 @@ export const Hero: React.FC<HeroProps> = ({ onStart }) => {
         <div className="flex flex-col">
           {/* Headline */}
           <h1 className="text-6xl md:text-8xl lg:text-[7.5rem] leading-[0.85] font-teko font-bold uppercase tracking-tighter text-black dark:text-white transition-colors duration-300">
-             <span className="block hover:text-gpb-blue transition-colors duration-300 cursor-default">WELCOME TO</span>
+             <span className="block hover:text-gpb-blue transition-colors duration-300 cursor-default">Welcome to</span>
              <span className="block hover:text-gpb-blue transition-colors duration-300 cursor-default">GLOBAL PRIVATE</span>
              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-black to-gray-400 dark:from-white dark:to-gray-500 hover:to-gpb-blue transition-all duration-500">BADMINTON.</span>
           </h1>
@@ -58,7 +58,7 @@ export const Hero: React.FC<HeroProps> = ({ onStart }) => {
         <div className="absolute bottom-0 right-0 p-8 md:p-16 z-10">
           {/* Decorative Line: Blue for Structure */}
           <div className="border-t-4 border-gpb-blue w-32 mb-4 ml-auto"></div>
-          <h2 className="text-white font-teko text-6xl md:text-8xl uppercase leading-none text-right shadow-black drop-shadow-xl">
+          <h2 className="text-white font-teko text-6xl md:text-8xl normal-case leading-none text-right shadow-black drop-shadow-xl">
             EST.<br/>2021
           </h2>
         </div>

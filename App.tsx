@@ -39,7 +39,7 @@ function App() {
         return (
            <>
             <div className="bg-white dark:bg-black text-black dark:text-white pt-32 pb-10 px-6 text-center transition-colors duration-300">
-               <h1 className="text-8xl font-teko font-bold uppercase">Upcoming Events</h1>
+               <h1 className="text-8xl font-teko font-bold normal-case">Upcoming Events</h1>
             </div>
             <News />
            </>

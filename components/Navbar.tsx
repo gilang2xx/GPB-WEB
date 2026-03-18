@@ -36,7 +36,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentView, setView }) => {
   };
 
   const navItems = [
-    { label: 'Home', view: View.HOME },
+    { label: 'Home', view: View.HOME},
     { label: 'About', view: View.ABOUT },
     { label: 'Services', view: View.SERVICES },
     { label: 'Shop', view: View.SHOP },
@@ -82,7 +82,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentView, setView }) => {
               <button
                 key={item.label}
                 onClick={() => setView(item.view)}
-                className={`text-xl font-teko font-bold uppercase tracking-wide decoration-4 underline-offset-8 transition-all duration-300
+                className={`text-xl font-teko normal-case tracking-wide decoration-4 underline-offset-8 transition-all duration-300
                   ${currentView === item.view ? 'text-white underline decoration-gpb-orange' : 'text-white/80 hover:text-white hover:underline hover:decoration-gpb-orange'}
                 `}
               >
@@ -131,7 +131,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentView, setView }) => {
                   setView(item.view);
                   setIsOpen(false);
                 }}
-                className="text-left text-4xl font-teko font-bold uppercase tracking-tight text-black dark:text-white hover:text-gpb-blue border-b border-gray-100 dark:border-white/10 pb-4"
+                className="text-left text-4xl font-teko font-bold normal-case tracking-tight text-black dark:text-white hover:text-gpb-blue border-b border-gray-100 dark:border-white/10 pb-4"
               >
                 {item.label}
               </button>
