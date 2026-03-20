@@ -271,6 +271,14 @@ export const Programs: React.FC<ProgramsProps> = ({ onNavigate }) => {
 
         <div className="mt-32 max-w-7xl mx-auto">
           <SectionHeader title="RATE CARD" subtitle="PROGRAM PRICING" align="center" />
+          <div className="mt-4 text-center max-w-2xl mx-auto">
+            <p className="flex items-center justify-center gap-2 text-sm md:text-base font-satoshi text-gray-700 dark:text-gray-400">
+              <i className="fas fa-info-circle text-gpb-blue"></i>
+              <span>
+                Harga berlaku untuk area Depok. Luar Depok dikenakan biaya transport tambahan.
+              </span>
+            </p>
+          </div>
 
           <div className="mt-16 space-y-12">
             {rateCards.map((card) => (
